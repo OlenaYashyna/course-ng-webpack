@@ -5,6 +5,7 @@ export default {
     template: MyFormTemplate,
     controller: MyFormCtrl,
     bindings: {
-        handleSubmit: '='
+        handleSubmit: '=',
+        formData: '='
     },
 }
