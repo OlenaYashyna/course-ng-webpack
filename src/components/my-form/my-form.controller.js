@@ -1,9 +1,6 @@
-export default function () {
-    
-     this.login = 'reef';
-    // this.password = this.formData.password;
-    
-    console.log (this)
+export default function ($scope) {
+
+     console.log (this, $scope, $scope.$ctrl.formData)
     
     this.onSubmit = () => this.handleSubmit({ login: this.login, password: this.password });
 }

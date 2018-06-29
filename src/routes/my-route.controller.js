@@ -4,7 +4,14 @@ export default class MyRouteController {
             login : 'Your Name',
             password: 'Your Password'
         }
-        $scope.handleSubmit = (formData) => console.log(formData);
+        //$scope.handleSubmit = () => console.log(this);
+        $scope.handleSubmit = function() { 
+            const userData = JSON.stringify(this.formData);
+            localStorage.setItem("myKey", userData);
+            
+            
+            console.log(this);
+        };
         
     }
 }

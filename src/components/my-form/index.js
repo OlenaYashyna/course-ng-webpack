@@ -6,6 +6,6 @@ export default {
     controller: MyFormCtrl,
     bindings: {
         handleSubmit: '=',
-        formData: '='
+        formData: '<'
     },
 }
