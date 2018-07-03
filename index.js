@@ -5,9 +5,10 @@ import componentsModule from './src/components';
 
 export default angular.module('app', [ngRoute, componentsModule])
     .factory('myService', ['$rootScope', function($rootScope) {
-        return {
-            boo: () => alert('Booo!'),
-        }
+        return $rootScope;
+        // return {
+        //     boo: () => alert('Booo!'),
+        // }
     }])
     .config(AppConfig)
     .run(['$rootScope', 'myService', (rootScope, myService) => { //services are ready, you can 
