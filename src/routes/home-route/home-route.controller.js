@@ -1,6 +1,6 @@
 export default class HomeRouteController {
     constructor($scope) {
-        $scope.showMessage = true;
+        console.log('HomeRouteController', $scope);
         
         
     }
