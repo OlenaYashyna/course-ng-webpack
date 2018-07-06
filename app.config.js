@@ -21,9 +21,7 @@ export default function AppConfig($routeProvider, $locationProvider) {
     //     enabled: true,
     //     requireBase: false
     // });
-    // $locationProvider
-    //   .html5Mode(true)
-    //   .hashPrefix('!');
+    $locationProvider.html5Mode(true);
 
 };
 
